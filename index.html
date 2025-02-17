@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悦声达闻 - ysdw.org - 有声读物资源导航</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box }
+        body { font-family: "微软雅黑", sans-serif; background: #f5f5f5 }
+
+        header {
+            background: #0066CC;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            justify-content: center;
+        }
+        .nav-list a {
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #f0f0f0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .nav-list a:hover {
+            background: #0066CC;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            color: #0066CC;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .links {
+            display: grid;
+            gap: 10px;
+        }
+        .links a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .links a:hover {
+            background: #e6f3ff;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>悦声达闻</h1>
+        <p>悦耳漱泉壑，声萦碧云端。达意通今古，闻心天地宽。</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="输入关键词搜索资源...">
+    </div>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#novel">有声小说</a></li>
+            <li><a href="#music">音乐电台</a></li>
+            <li><a href="#kids">儿童教育</a></li>
+            <li><a href="#opera">戏曲评书</a></li>
+            <li><a href="#language">语言学习</a></li>
+            <li><a href="#finance">商业财经</a></li>
+            <li><a href="#movie">影视艺术</a></li>
+            <li><a href="#tools">创作工具</a></li>
+            <li><a href="#podcast">播客平台</a></li>
+            <li><a href="#course">在线课程</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 有声小说 -->
+        <div class="category" id="novel">
+            <h2>📚 有声小说（12个）</h2>
+            <div class="links">
+                <a href="https://www.230ts.net/">爱上你听书</a>
+                <a href="https://www.6yueting.com/">六月听书网</a>
+                <a href="https://www.ximalaya.com">喜马拉雅</a>
+                <a href="https://www.ting456.com/">听书吧</a>
+                <a href="https://www.zgpingshu.com/">中国评书网</a>
+                <a href="https://www.psmp3.com/">评书MP3网</a>
+                <a href="https://www.tingzh.com/">中文听书</a>
+                <a href="https://www.lazyaudio.com/">懒人听书</a>
+                <a href="https://www.520tingshu.com/">520听书网</a>
+                <a href="https://www.ciyuans.com/">原始人听书</a>
+                <a href="https://www.ting35.com/">三五听书</a>
+                <a href="https://www.mgting.com/">芒果听书</a>
+            </div>
+        </div>
+
+        <!-- 音乐电台 -->
+        <div class="category" id="music">
+            <h2>🎵 音乐电台（12个）</h2>
+            <div class="links">
+                <a href="https://music.163.com/">网易云音乐</a>
+                <a href="https://y.qq.com/">QQ音乐</a>
+                <a href="https://www.kugou.com/">酷狗音乐</a>
+                <a href="https://www.kuwo.cn/">酷我音乐</a>
+                <a href="https://www.ximalaya.com/radio">喜马拉雅电台</a>
+                <a href="https://www.qingting.fm/">蜻蜓FM</a>
+                <a href="https://www.lizhi.fm/">荔枝FM</a>
+                <a href="https://www.tingfm.com/">TingFM</a>
+                <a href="https://www.radio.cn/">云听</a>
+                <a href="https://www.91q.com/">千千音乐</a>
+                <a href="https://www.douban.com/fm">豆瓣FM</a>
+                <a href="https://www.ytmp3.cn/">音乐解析</a>
+            </div>
+        </div>
+
+        <!-- 儿童教育 -->
+        <div class="category" id="kids">
+            <h2>👶 儿童教育（10个）</h2>
+            <div class="links">
+                <a href="https://www.61ertong.com/">六一儿童网</a>
+                <a href="https://www.tuxiaobei.com/">兔小贝</a>
+                <a href="https://kids.nationalgeographic.com/">国家地理儿童版</a>
+                <a href="https://www.starfall.com/">Starfall</a>
+                <a href="https://pbskids.org/">PBS Kids</a>
+                <a href="https://www.abcya.com/">ABCya!</a>
+                <a href="https://scratch.mit.edu/">Scratch编程</a>
+                <a href="https://www.gushiwen.cn/">古诗文网</a>
+                <a href="https://www.ximalaya.com/ertong/">喜马拉雅儿童</a>
+                <a href="https://www.ilearn.com.cn/">爱学习</a>
+            </div>
+        </div>
+
+        <!-- 戏曲评书 -->
+        <div class="category" id="opera">
+            <h2>🎭 戏曲评书（10个）</h2>
+            <div class="links">
+                <a href="https://www.zgpingshu.com/">中国评书网</a>
+                <a href="https://www.pingshu8.com/">评书吧</a>
+                <a href="https://www.psmp3.com/">评书MP3</a>
+                <a href="https://www.tingbook.cc/">听书网</a>
+                <a href="https://www.xiangsheng.org/">相声评书网</a>
+                <a href="https://www.quyi.net/">中国曲艺网</a>
+                <a href="https://www.xiqu5.com/">戏曲屋</a>
+                <a href="https://www.huju.net/">中国京剧网</a>
+                <a href="https://www.yueju.net/">中国越剧网</a>
+                <a href="https://www.kunqu.net/">中国昆曲网</a>
+            </div>
+        </div>
+
+        <!-- 语言学习 -->
+        <div class="category" id="language">
+            <h2>🌐 语言学习（10个）</h2>
+            <div class="links">
+                <a href="https://www.hujiang.com/">沪江网校</a>
+                <a href="https://www.italki.com/">italki</a>
+                <a href="https://www.hellochinese.com/">HelloChinese</a>
+                <a href="https://www.duolingo.com/">多邻国</a>
+                <a href="https://www.lingq.com/">LingQ</a>
+                <a href="https://www.zhongwen.com/">中文网</a>
+                <a href="https://www.chineseclass101.com/">中文学习</a>
+                <a href="https://www.bbc.co.uk/languages/">BBC语言</a>
+                <a href="https://www.voicetube.com/">VoiceTube</a>
+                <a href="https://www.lingoclip.com/">LingoClip</a>
+            </div>
+        </div>
+
+        <!-- 商业财经 -->
+        <div class="category" id="finance">
+            <h2>📈 商业财经（10个）</h2>
+            <div class="links">
+                <a href="https://www.eastmoney.com/">东方财富网</a>
+                <a href="https://www.10jqka.com.cn/">同花顺财经</a>
+                <a href="https://www.jiemian.com/">界面新闻</a>
+                <a href="https://www.yicai.com/">第一财经</a>
+                <a href="https://www.cls.cn/">财联社</a>
+                <a href="https://wallstreetcn.com/">华尔街见闻</a>
+                <a href="https://www.hexun.com/">和讯网</a>
+                <a href="https://www.caixin.com/">财新网</a>
+                <a href="https://www.p5w.net/">全景网</a>
+                <a href="https://www.21jingji.com/">21经济网</a>
+            </div>
+        </div>
+
+        <!-- 影视艺术 -->
+        <div class="category" id="movie">
+            <h2>🎬 影视艺术（10个）</h2>
+            <div class="links">
+                <a href="https://www.douban.com/">豆瓣电影</a>
+                <a href="https://www.imdb.com/">IMDb</a>
+                <a href="https://www.bilibili.com/">哔哩哔哩</a>
+                <a href="https://www.1905.com/">电影网</a>
+                <a href="https://www.mtime.com/">时光网</a>
+                <a href="https://www.vmovier.com/">场库</a>
+                <a href="https://www.xinpianchang.com/">新片场</a>
+                <a href="https://www.artstation.com/">ArtStation</a>
+                <a href="https://www.behance.net/">Behance</a>
+                <a href="https://dribbble.com/">Dribbble</a>
+            </div>
+        </div>
+
+        <!-- 创作工具 -->
+        <div class="category" id="tools">
+            <h2>🛠️ 创作工具（12个）</h2>
+            <div class="links">
+                <a href="https://www.67tool.com/">67工具网</a>
+                <a href="https://www.zhisheji.com/">致设计</a>
+                <a href="https://xmsoushu.com/">熊猫搜索</a>
+                <a href="https://www.chongbuluo.com/">虫部落快搜</a>
+                <a href="https://www.jiumodiary.com/">鸠摩搜书</a>
+                <a href="https://www.aigei.com/">爱给网</a>
+                <a href="https://www.58pic.com/">千图网</a>
+                <a href="https://www.chuangkit.com/">创客贴</a>
+                <a href="https://www.gaoding.com/">稿定设计</a>
+                <a href="https://www.remove.bg/">去背景工具</a>
+                <a href="https://www.canva.com/">Canva</a>
+                <a href="https://www.figma.com/">Figma</a>
+            </div>
+        </div>
+
+        <!-- 播客平台 -->
+        <div class="category" id="podcast">
+            <h2>🎙️ 播客平台（10个）</h2>
+            <div class="links">
+                <a href="https://www.ximalaya.com/">喜马拉雅</a>
+                <a href="https://www.xiaoyuzhoufm.com/">小宇宙</a>
+                <a href="https://podcasts.apple.com/">Apple Podcast</a>
+                <a href="https://music.163.com/#/podcast">网易云播客</a>
+                <a href="https://www.qq.com/folder">腾讯播客</a>
+                <a href="https://www.lizhi.fm/">荔枝播客</a>
+                <a href="https://www.tingfm.com/">TingFM播客</a>
+                <a href="https://www.himalaya.com/">Himalaya</a>
+                <a href="https://www.podcastaddict.com/">Podcast Addict</a>
+                <a href="https://castbox.fm/">Castbox</a>
+            </div>
+        </div>
+
+        <!-- 在线课程 -->
+        <div class="category" id="course">
+            <h2>🎓 在线课程（12个）</h2>
+            <div class="links">
+                <a href="https://www.coursera.org/">Coursera</a>
+                <a href="https://www.edx.org/">edX</a>
+                <a href="https://www.udemy.com/">Udemy</a>
+                <a href="https://www.khanacademy.org/">可汗学院</a>
+                <a href="https://www.icourse163.org/">中国大学MOOC</a>
+                <a href="https://www.zhihuishu.com/">智慧树</a>
+                <a href="https://www.xuexi.cn/">学习强国</a>
+                <a href="https://www.gaodun.com/">高顿教育</a>
+                <a href="https://www.duolingo.com/">多邻国</a>
+                <a href="https://www.skillshare.com/">Skillshare</a>
+                <a href="https://www.linkedin.com/learning/">LinkedIn学习</a>
+                <a href="https://www.ted.com/">TED演讲</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© ysdw.org 悦声达闻 - 声澈千山外，文流万卷中</p>
+    </footer>
+
+    <script>
+        // 搜索功能实现
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const categories = document.querySelectorAll('.category');
+
+            categories.forEach(category => {
+                let matchCount = 0;
+                const links = category.querySelectorAll('.links a');
+                
+                links.forEach(link => {
+                    const isMatch = link.textContent.toLowerCase().includes(searchTerm);
+                    link.style.display = isMatch ? 'block' : 'none';
+                    if(isMatch) matchCount++;
+                });
+
+                category.style.display = matchCount > 0 ? 'block' : 'none';
+                if(matchCount > 0) {
+                    category.querySelector('h2').innerHTML = `${category.querySelector('h2').textContent.split('（')[0]}（${matchCount}个）`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
